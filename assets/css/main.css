@@ -2348,6 +2348,7 @@ input, select, textarea {
 			.icon.major:before {
 				font-size: 4em;
 				line-height: 1em;
+				color: #2d2d2d;
 			}
 
 /* Image */
@@ -2914,11 +2915,11 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		background-color: #3E77CC;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("../../images/DSC_0702.JPG");
-		background-position: bottom;
+		background-position: center;
 		background-size: cover;
 		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 		background-position: top left,						center center,					center center;
@@ -3010,6 +3011,7 @@ input, select, textarea {
 
 		#header h1 {
 			margin: 0;
+			color: #2d2d2d;
 		}
 
 		#header p {
@@ -3079,7 +3081,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, #4fa49a, #4361c2);
+			background-image: linear-gradient(45deg, #7EAADA, #2860B8);
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3116,7 +3118,7 @@ input, select, textarea {
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4f94a4, #7EAADA);
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
@@ -3515,6 +3517,15 @@ input, select, textarea {
 	}
 
 	/* custom css */
+
+.header-content {
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 30px 0;
+	max-width: 475px;
+	margin: 0 auto;
+	border-radius: 12px;
+	color: #2d2d2d;
+}
 
 .no-style-list {
 	list-style: none;
