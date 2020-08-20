@@ -2921,9 +2921,6 @@ input, select, textarea {
 		background-image: url("../../images/DSC_0702.JPG");
 		background-position: center;
 		background-size: cover;
-		/* background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
-		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover; */
 		overflow: hidden;
 		position: relative;
 		text-align: center;
