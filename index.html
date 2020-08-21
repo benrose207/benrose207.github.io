@@ -4,8 +4,8 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<head lang="en">
+<html lang="en">
+	<head>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async
 			src="https://www.googletagmanager.com/gtag/js?id=UA-175985833-1"></script>
@@ -15,6 +15,17 @@
 			gtag('js', new Date());
 
 			gtag('config', 'UA-175985833-1');
+		</script>
+		<script>
+			const getOutboundLink = (action, label) => {
+				gtag('event', 'click', {
+					'event_category': 'click',
+					'event_action': action,
+					'event_label': label,
+					'transport_type': 'beacon',
+					// 'event_callback': function () { document.location = url; }
+				});
+			}
 		</script>
 
 		<title>Benjamin Rose</title>
@@ -77,7 +88,7 @@
 									<a 
 										href="mailto:benrose207@gmail.com" 
 										class="icon solid alt fa-envelope"
-										onclick="ga('send', 'event', 'Click', 'Email', 'profile');"
+										onclick="getOutboundLink('email', 'profile');"
 									>  /benrose207@gmail.com</a>
 								</li>
 								<li>
@@ -85,7 +96,7 @@
 										href="https://www.linkedin.com/in/benjamin-rose-483549124/" 
 										target="_blank" 
 										class="icon brands alt fa-linkedin"
-										onclick="ga('send', 'event', 'Click', 'LinkedIn', 'profile');"
+										onclick="getOutboundLink('linkedin', 'profile');"
 									>  /benjamin-rose-483549124</a>
 								</li>
 								<li>
@@ -93,7 +104,7 @@
 										href="https://angel.co/u/benjamin-rose-2" 
 										target="_blank" 
 										class="icon brands alt fa-angellist"
-										onclick="ga('send', 'event', 'Click', 'Angellist', 'profile');"
+										onclick="getOutboundLink('angellist', 'profile');"
 									>  /benjamin-rose-2</a>
 								</li>
 								<li>
@@ -101,7 +112,7 @@
 										href="https://github.com/benrose207" 
 										target="_blank" 
 										class="icon brands alt fa-github"
-										onclick="ga('send', 'event', 'Click', 'GitHub', 'profile');"
+										onclick="getOutboundLink('email', 'profile');"
 									>  /benrose207</a>
 								</li>
 							</ul>
