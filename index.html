@@ -5,7 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
+	<head lang="en">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async
 			src="https://www.googletagmanager.com/gtag/js?id=UA-175985833-1"></script>
@@ -19,7 +19,8 @@
 
 		<title>Benjamin Rose</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="I am a software engineer with a passion for building things that are sustainable and user-focused. I have experience working with JavaScript, React / Redux, Ruby on Rails, among other skills.">
 		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -70,19 +71,38 @@
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium imp-medium flex-col">
-							<span class="image fit prof-picture"><img src="./images/profile-pic-medium.jpeg" alt="" /></span>
+							<span class="image fit prof-picture"><img src="./images/profile-pic-medium.jpeg" alt="Benjamin Rose" /></span>
 							<ul class="no-style-list profile-links">
 								<li>
-									<a href="mailto:benrose207@gmail.com" class="icon solid alt fa-envelope">  /benrose207@gmail.com</a>
+									<a 
+										href="mailto:benrose207@gmail.com" 
+										class="icon solid alt fa-envelope"
+										onclick="ga('send', 'event', 'Click', 'Email', 'profile');"
+									>  /benrose207@gmail.com</a>
 								</li>
 								<li>
-									<a href="https://www.linkedin.com/in/benjamin-rose-483549124/" target="_blank" class="icon brands alt fa-linkedin">  /benjamin-rose-483549124</a>
+									<a 
+										href="https://www.linkedin.com/in/benjamin-rose-483549124/" 
+										target="_blank" 
+										class="icon brands alt fa-linkedin"
+										onclick="ga('send', 'event', 'Click', 'LinkedIn', 'profile');"
+									>  /benjamin-rose-483549124</a>
 								</li>
 								<li>
-									<a href="https://angel.co/u/benjamin-rose-2" target="_blank" class="icon brands alt fa-angellist">  /benjamin-rose-2</a>
+									<a 
+										href="https://angel.co/u/benjamin-rose-2" 
+										target="_blank" 
+										class="icon brands alt fa-angellist"
+										onclick="ga('send', 'event', 'Click', 'Angellist', 'profile');"
+									>  /benjamin-rose-2</a>
 								</li>
 								<li>
-									<a href="https://github.com/benrose207" target="_blank" class="icon brands alt fa-github">  /benrose207</a>
+									<a 
+										href="https://github.com/benrose207" 
+										target="_blank" 
+										class="icon brands alt fa-github"
+										onclick="ga('send', 'event', 'Click', 'GitHub', 'profile');"
+									>  /benrose207</a>
 								</li>
 							</ul>
 						</div>
@@ -98,7 +118,7 @@
 					<div class="row gtr-150">
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="./images/hike_screenshot.png"
-									alt="" /></span>
+									alt="AllHikes Screenshot" /></span>
 							<h3>AllHikes</h3>
 							<p>Site on which users can find information about hikes, as well as add
 								reviews and
@@ -108,12 +128,12 @@
 								<li><a href="https://all-hikes.herokuapp.com/" target="_blank"
 										class="button">View</a></li>
 								<li><a href="https://github.com/benrose207/AllHikes" target="_blank"
-										class="button">Repo</a></li>
+										class="button">GitHub</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img
-									src="./images/sheep_on_the_lam_screenshot.png" alt="" /></span>
+									src="./images/sheep_on_the_lam_screenshot.png" alt="Sheep on the Lam Screenshot" /></span>
 							<h3>Sheep on the Lam</h3>
 							<p>Browser-based game in which the user has to herd sheep back into
 								their pasture, inspired by a childhood growing up with sheep in
@@ -122,12 +142,12 @@
 								<li><a href="https://benrose207.github.io/SheepOnTheLam/" target="_blank"
 										class="button">Play</a></li>
 								<li><a href="https://github.com/benrose207/SheepOnTheLam" target="_blank"
-										class="button">Repo</a></li>
+										class="button">GitHub</a></li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
 							<span class="image fit"><img src="./images/rebond-screenshot.png"
-									alt="" /></span>
+									alt="ReBond app screenshot" /></span>
 							<h3>ReBond</h3>
 							<p>An app to facilitate meetups between already-established groups of
 								people, based
@@ -137,7 +157,7 @@
 								<li><a href="https://rebond.herokuapp.com/" target="_blank" class="button">View</a>
 								</li>
 								<li><a href="https://github.com/AEDGitHub/MERN-Team-PARK" target="_blank"
-										class="button">Repo</a></li>
+										class="button">GitHub</a></li>
 							</ul>
 						</div>
 					</div>
@@ -278,8 +298,8 @@
 			<section id="footer">
 				<ul class="icons">
 					<li><a href="https://github.com/benrose207" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/benjamin-rose-483549124/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">GitHub</span></a></li>
-					<li><a href="https://angel.co/u/benjamin-rose-2" target="_blank" class="icon brands alt fa-angellist"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/benjamin-rose-483549124/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://angel.co/u/benjamin-rose-2" target="_blank" class="icon brands alt fa-angellist"><span class="label">Angellist</span></a></li>
 					<li><a href="mailto:benrose207@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
