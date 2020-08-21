@@ -78,7 +78,14 @@
 							If I’m not at my keyboard, you’re most likely to find me either exploring the
 							outdoors or trying to expand my horizons with a new recipe in the kitchen.</p>
 							<ul class="actions">
-								<li><a href="./assets/Rose_Benjamin_Resume.pdf" target="_blank" class="button primary icon solid fa-download">Resume</a></li>
+								<li>
+									<a 
+										href="./assets/Rose_Benjamin_Resume.pdf" 
+										target="_blank" 
+										class="button primary icon solid fa-download"
+										onclick="getOutboundLink('resume', 'profile');"
+									>Resume</a>
+								</li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium imp-medium flex-col">
@@ -136,10 +143,22 @@
 								photos. Inspired by AllTrails.com. Built with Javascript, React /
 								Redux, Ruby on Rails, postreSQL, AWS S3, & MapBox API.</p>
 							<ul class="actions">
-								<li><a href="https://all-hikes.herokuapp.com/" target="_blank"
-										class="button">View</a></li>
-								<li><a href="https://github.com/benrose207/AllHikes" target="_blank"
-										class="button">GitHub</a></li>
+								<li>
+									<a 
+										href="https://all-hikes.herokuapp.com/" 
+										target="_blank"
+										class="button"
+										onclick="getOutboundLink('allhikes', 'website');"
+									>View</a>
+								</li>
+								<li>
+									<a 
+										href="https://github.com/benrose207/AllHikes" 
+										target="_blank"
+										class="button"
+										onclick="getOutboundLink('allhikes', 'repo');"
+									>GitHub</a>
+								</li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
@@ -150,10 +169,22 @@
 								their pasture, inspired by a childhood growing up with sheep in
 								Maine. Built with JavaScript, CSS3, HTML5 Canvas.</p>
 							<ul class="actions">
-								<li><a href="https://benrose207.github.io/SheepOnTheLam/" target="_blank"
-										class="button">Play</a></li>
-								<li><a href="https://github.com/benrose207/SheepOnTheLam" target="_blank"
-										class="button">GitHub</a></li>
+								<li>
+									<a 
+										href="https://benrose207.github.io/SheepOnTheLam/" 
+										target="_blank"
+										class="button"
+										onclick="getOutboundLink('sheep', 'website');"
+									>Play</a>
+								</li>
+								<li>
+									<a 
+										href="https://github.com/benrose207/SheepOnTheLam" 
+										target="_blank"
+										class="button"
+										onclick="getOutboundLink('sheep', 'repo');"
+									>GitHub</a>
+								</li>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
@@ -165,10 +196,22 @@
 								on personal interests and passions. Built with React / Redux,
 								JavaScript, Node.js, Express.js, MongoDB, & Materialize CSS.</p>
 							<ul class="actions">
-								<li><a href="https://rebond.herokuapp.com/" target="_blank" class="button">View</a>
+								<li>
+									<a 
+										href="https://rebond.herokuapp.com/" 
+										target="_blank" 
+										class="button"
+										onclick="getOutboundLink('rebond', 'website');"
+									>View</a>
 								</li>
-								<li><a href="https://github.com/AEDGitHub/MERN-Team-PARK" target="_blank"
-										class="button">GitHub</a></li>
+								<li>
+									<a 
+										href="https://github.com/AEDGitHub/MERN-Team-PARK" 
+										target="_blank"
+										class="button"
+										onclick="getOutboundLink('rebond', 'repo');"
+									>GitHub</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -299,8 +342,21 @@
 						<h2>Want to get in touch?</h2>
 					</header>
 					<ul class="actions special">
-						<li><a href="mailto:benrose207@gmail.com" class="button wide primary">Email</a></li>
-						<li><a href="./assets/Rose_Benjamin_Resume.pdf" target="_blank" class="button wide">Resume</a></li>
+						<li>
+							<a 
+								href="mailto:benrose207@gmail.com" 
+								class="button wide primary" 
+								onclick="getOutboundLink('email', 'contact-block');"
+							>Email</a>
+						</li>
+						<li>
+							<a 
+								href="./assets/Rose_Benjamin_Resume.pdf" 
+								target="_blank" 
+								class="button wide"
+								onclick="getOutboundLink('resume', 'contact-block');"
+							>Resume</a>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -308,10 +364,45 @@
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
-					<li><a href="https://github.com/benrose207" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/benjamin-rose-483549124/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://angel.co/u/benjamin-rose-2" target="_blank" class="icon brands alt fa-angellist"><span class="label">Angellist</span></a></li>
-					<li><a href="mailto:benrose207@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					<li>
+						<a 
+							href="https://github.com/benrose207" 
+							target="_blank" 
+							class="icon brands alt fa-github"
+							onclick="getOutboundLink('github', 'footer');"
+						>
+							<span class="label">GitHub</span>
+						</a>
+					</li>
+					<li>
+						<a 
+							href="https://www.linkedin.com/in/benjamin-rose-483549124/" 
+							target="_blank" 
+							class="icon brands alt fa-linkedin"
+							onclick="getOutboundLink('linkedin', 'footer');"
+						>
+							<span class="label">LinkedIn</span>
+						</a>
+					</li>
+					<li>
+						<a 
+							href="https://angel.co/u/benjamin-rose-2" 
+							target="_blank" 
+							class="icon brands alt fa-angellist"
+							onclick="getOutboundLink('angellist', 'footer');"
+						>
+							<span class="label">Angellist</span>
+						</a>
+					</li>
+					<li>
+						<a 
+							href="mailto:benrose207@gmail.com" 
+							class="icon solid alt fa-envelope"
+							onclick="getOutboundLink('email', 'footer');"
+						>
+							<span class="label">Email</span>
+						</a>
+					</li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; Benjamin Rose</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
