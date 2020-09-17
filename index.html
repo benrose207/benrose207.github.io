@@ -23,7 +23,6 @@
 					'event_action': action,
 					'event_label': label,
 					'transport_type': 'beacon',
-					// 'event_callback': function () { document.location = url; }
 				});
 			}
 		</script>
@@ -36,8 +35,14 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
 		<link rel="manifest" href="./site.webmanifest">
-		<link rel="stylesheet"
-			href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+		<link 
+			rel="preload"
+			href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		>
+		<noscript>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css"></noscript>
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -103,6 +108,7 @@
 										href="https://www.linkedin.com/in/benjamin-rose-483549124/" 
 										target="_blank" 
 										class="icon brands alt fa-linkedin"
+										rel="noopener"
 										onclick="getOutboundLink('linkedin', 'profile');"
 									>  /benjamin-rose-483549124</a>
 								</li>
@@ -111,6 +117,7 @@
 										href="https://angel.co/u/benjamin-rose-2" 
 										target="_blank" 
 										class="icon brands alt fa-angellist"
+										rel="noopener"
 										onclick="getOutboundLink('angellist', 'profile');"
 									>  /benjamin-rose-2</a>
 								</li>
@@ -119,6 +126,7 @@
 										href="https://github.com/benrose207" 
 										target="_blank" 
 										class="icon brands alt fa-github"
+										rel="noopener"
 										onclick="getOutboundLink('email', 'profile');"
 									>  /benrose207</a>
 								</li>
@@ -148,6 +156,7 @@
 										href="https://all-hikes.herokuapp.com/" 
 										target="_blank"
 										class="button"
+										rel="noopener"
 										onclick="getOutboundLink('allhikes', 'website');"
 									>View</a>
 								</li>
@@ -156,6 +165,7 @@
 										href="https://github.com/benrose207/AllHikes" 
 										target="_blank"
 										class="button"
+										rel="noopener"
 										onclick="getOutboundLink('allhikes', 'repo');"
 									>GitHub</a>
 								</li>
@@ -174,6 +184,7 @@
 										href="https://benrose207.github.io/SheepOnTheLam/" 
 										target="_blank"
 										class="button"
+										rel="noopener"
 										onclick="getOutboundLink('sheep', 'website');"
 									>Play</a>
 								</li>
@@ -182,6 +193,7 @@
 										href="https://github.com/benrose207/SheepOnTheLam" 
 										target="_blank"
 										class="button"
+										rel="noopener"
 										onclick="getOutboundLink('sheep', 'repo');"
 									>GitHub</a>
 								</li>
@@ -200,6 +212,7 @@
 										href="https://rebond.herokuapp.com/" 
 										target="_blank" 
 										class="button"
+										rel="noopener"
 										onclick="getOutboundLink('rebond', 'website');"
 									>View</a>
 								</li>
@@ -208,6 +221,7 @@
 										href="https://github.com/AEDGitHub/MERN-Team-PARK" 
 										target="_blank"
 										class="button"
+										rel="noopener"
 										onclick="getOutboundLink('rebond', 'repo');"
 									>GitHub</a>
 								</li>
@@ -315,7 +329,7 @@
 								<img src="./images/app_academy_logo.png" alt="app academy logo">
 								<div>
 									<h3>App Academy</h3>
-									<h5>Summer 2020</h5>
+									<h4>Summer 2020</h4>
 								</div>
 							</div>
 							<p>Full Stack Software Engineering</p>
@@ -326,7 +340,7 @@
 								<img src="./images/wesleyan_logo.png" alt="wesleyan university logo">
 								<div>
 									<h3>Wesleyan University</h3>
-									<h5>2008 - 2012</h5>
+									<h4>2008 - 2012</h4>
 								</div>
 							</div>
 							<p>Bachelor’s Degree, History and Iberian Studies</p>
@@ -366,8 +380,10 @@
 					<li>
 						<a 
 							href="https://github.com/benrose207" 
+							aria-label="GitHub"
 							target="_blank" 
 							class="icon brands alt fa-github"
+							rel="noopener"
 							onclick="getOutboundLink('github', 'footer');"
 						>
 							<span class="label">GitHub</span>
@@ -376,8 +392,10 @@
 					<li>
 						<a 
 							href="https://www.linkedin.com/in/benjamin-rose-483549124/" 
+							aria-label="LinkedIn"
 							target="_blank" 
 							class="icon brands alt fa-linkedin"
+							rel="noopener"
 							onclick="getOutboundLink('linkedin', 'footer');"
 						>
 							<span class="label">LinkedIn</span>
@@ -386,8 +404,10 @@
 					<li>
 						<a 
 							href="https://angel.co/u/benjamin-rose-2" 
+							aria-label="Angellist"
 							target="_blank" 
 							class="icon brands alt fa-angellist"
+							rel="noopener"
 							onclick="getOutboundLink('angellist', 'footer');"
 						>
 							<span class="label">Angellist</span>
@@ -396,6 +416,7 @@
 					<li>
 						<a 
 							href="mailto:benrose207@gmail.com" 
+							aria-label="Email"
 							class="icon solid alt fa-envelope"
 							onclick="getOutboundLink('email', 'footer');"
 						>

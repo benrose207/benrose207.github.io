@@ -3606,9 +3606,13 @@ input, select, textarea {
 	margin-right: 15px;
 }
 
-.education-card .education-card-header h3, .education-card .education-card-header h5 {
+.education-card .education-card-header h3, .education-card .education-card-header h4 {
 	margin-bottom: 5px;
 	color: #666;
+}
+
+.education-card h4 {
+	font-size: 1.1rem;
 }
 
 .education-card p {
